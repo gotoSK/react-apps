@@ -26,9 +26,9 @@ function Button() {
         <>
             <p>Name: {name}, Age:{age}, Employeed: {isEmployed ? "Yes": "No"}</p>
             <button onClick={() => updateName("Mr. Depp")}>Update Name</button>
-            <br /><br />
+            &nbsp;
             <button onClick={updateAge}>Increase Age</button>
-            <br /><br />
+            &nbsp;
             <button onClick={toggleEmpStatus}>{isEmployed ? "Employeed": "Unemployed"}</button>
             <br /><br />
             <button
