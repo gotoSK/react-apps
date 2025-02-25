@@ -3,8 +3,13 @@ import { useState } from "react";
 function Counter() {
     const [count, setCount] = useState(0);
 
-    const inc = () => setCount(count+1);
-    const dec = () => setCount(count-1);
+    function inc() {
+        // setCount(count+1);
+        setCount(prevCount => prevCount +10); // using updater function
+    }
+    function dec() {
+        setCount(count-1);
+    }
     const reset = () => setCount(0);
 
     return(
